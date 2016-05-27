@@ -19,7 +19,13 @@ core
 # Executables
 test
 aligner
+kmercomp
 
 local_tests
 
 TAGS
+
+# Temporary files and output
+*.tee
+*.spect
+temp/
