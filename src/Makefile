@@ -14,7 +14,7 @@ test: edlib.o test.cpp SimpleEditDistance.h
 aligner: edlib.o aligner.cpp SimpleEditDistance.h
 	$(CC) $(CFLAGS) edlib.o aligner.cpp -o aligner
 
-aligner: edlib.o kmercomp.cpp SimpleEditDistance.h
+kmercomp: edlib.o kmercomp.cpp SimpleEditDistance.h
 	$(CC) $(CFLAGS) edlib.o kmercomp.cpp -o kmercomp
 
 edlib.o: edlib.cpp edlib.h
